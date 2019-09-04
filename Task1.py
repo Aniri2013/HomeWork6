@@ -12,7 +12,7 @@ if __name__ == '__main__':
               '\nИзменить количество учеников в классе - введи ИЗМ - '
               '\nСоздать новый класс - введи НК - '
               '\nУдалить класс - введи УДАЛИТЬ - '
-              '\nПосчитать общее количество учеников - введи СЧЁТ'
+              '\nПосчитать общее количество учеников - введи СЧЕТ'
               '\nЗавершить программу - введи ВЫХ')
 
         deystvie = input('\nВведи команду - ')
@@ -30,9 +30,9 @@ if __name__ == '__main__':
             print(nomer_classa)
             del school[nomer_classa]
 
-        elif deystvie == 'CЧЕТ':
+        elif deystvie == 'СЧЕТ':
             sum = 0
-            for key in school:
+            for key in school.keys():
                 sum += school[key]
 
             print(sum)
